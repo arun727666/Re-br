@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/4bdf102660.js" crossorigin="anonymous"></script>
+    <img src="resumelogo.png" alt="resumelogo" style="position: absolute; top: 20px; left: 10px; width: 51mm; height: 51mm;">
+    <div class="container">
+        <h1>ReBr-The Resume builder</h1>
+        <h4 style="font-style:italic;">Your personalized resume builder</h4>
+        <form id="resume-form">
+            <p><i class="fa-solid fa-user fa-beat"></i>  PERSONAL DETAILS:</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="photo">Passport-size Photo (Image should be 51mm x 51mm):</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <p><i class="fa-solid fa-address-book fa-beat-fade"></i>  CONTACT DETAILS:</p>
+            <label for="contact">Mobile No:</label>
+            <textarea id="contact" name="contact" required></textarea>
+            <label for="contact1">Mail ID:</label>
+            <textarea id="contact1" name="contact1" required></textarea>
+
+            <p><i class="fa-solid fa-school fa-beat-fade"></i>  EDUCATION DETAILS:</p>
+            <label for="education1">School Name:</label>
+            <textarea id="education1" name="education1" required></textarea>
+            <label for="education2">12th Mark:</label>
+            <textarea id="education2" name="education2" required></textarea>
+            <label for="education3">College Name:</label>
+            <textarea id="education3" name="education3" required></textarea>
+            <label for="education5">Degree:</label>
+            <textarea id="education5" name="education5" required></textarea>
+            <label for="education4">College CGPA:</label>
+            <textarea id="education4" name="education4" required></textarea>
+
+            <p><i class="fa-solid fa-certificate fa-beat-fade"></i>  SKILLS:</p>
+            <label for="course">Courses & certifications:</label>
+            <textarea id="course" name="course" required></textarea>
+            <label for="lang">Language Knowns:</label>
+            <textarea id="lang" name="lang" required></textarea>
+            <label for="hobbi">Hobbies:</label>
+            <textarea id="hobbi" name="hobbi" required></textarea>
+
+            
+            <input type="submit" value="Generate Resume">
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
